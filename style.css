@@ -1,0 +1,89 @@
+body {
+  background: #0f0f0f;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+#searchInput {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background: red;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 movies per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  margin: 10px 0;
+}
+
+.movie-card a {
+  display: block;
+  background: red;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.movie-card a:hover {
+  background: darkred;
+}#notifyBtn {
+  padding: 10px 15px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#notifyBtn:hover {
+  background: darkred;
+}
