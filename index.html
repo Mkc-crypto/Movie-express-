@@ -1,84 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
 
-    <!-- Mobile Responsive Scaling (DO NOT REMOVE) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BASIC META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title -->
-    <title>Movie Express - Watch Trending Movies & Trailers</title>
+  <!-- SEO TITLE (Very Important) -->
+  <title>Movie Express | Watch Movie Trailers & Discover Action, Comedy & Anime</title>
 
-    <!-- SEO Description -->
-    <meta name="description" content="Discover trending movies, anime, and watch official trailers on Movie Express. Updated daily.">
+  <!-- META DESCRIPTION (Google shows this) -->
+  <meta name="description" content="Watch the latest movie trailers online. Discover action, comedy, and anime movies on Movie Express. Simple, fast, and free movie browsing.">
 
-    <!-- Author -->
-    <meta name="author" content="Movie Express">
+  <!-- KEYWORDS (Optional but helpful) -->
+  <meta name="keywords" content="watch movies, movie trailers, action movies, comedy movies, anime movies, free movie website">
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css">
+  <!-- AUTHOR -->
+  <meta name="author" content="Movie Express">
+
+  <!-- OPEN GRAPH (For Facebook & Social Sharing) -->
+  <meta property="og:title" content="Movie Express - Watch Movie Trailers Online">
+  <meta property="og:description" content="Discover and watch action, comedy, and anime movie trailers.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="banner.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Movie Express - Watch Movie Trailers">
+  <meta name="twitter:description" content="Discover the latest action, comedy and anime movies.">
+  <meta name="twitter:image" content="banner.jpg">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<h1>🎬 Movie Express</h1>
 
-    <!-- Header -->
-    <header>
-        <h1 class="logo">🎬 Movie Express</h1>
-    </header>
+<!-- SEARCH BAR -->
+<input type="text" id="searchInput" placeholder="Search movies...">
+<button id="notifyBtn">Enable Movie Notifications</button>
 
-    <!-- Search Section -->
-    <section class="search-section">
-        <input type="text" id="searchInput" placeholder="Search for a movie...">
-    </section>
-
-    <!-- Movies Container -->
-    <section class="movies-container">
-
-        <!-- Movie Card 1 -->
-        <div class="movie-card">
-            <img src="https://via.placeholder.com/300x450" alt="Naruto">
-            <h3>Naruto</h3>
-            <a href="https://www.youtube.com/results?search_query=Naruto+trailer" target="_blank">
-                <button>Watch Trailer</button>
-            </a>
-        </div>
-
-        <!-- Movie Card 2 -->
-        <div class="movie-card">
-            <img src="https://via.placeholder.com/300x450" alt="Batman">
-            <h3>Batman</h3>
-            <a href="https://www.youtube.com/results?search_query=Batman+trailer" target="_blank">
-                <button>Watch Trailer</button>
-            </a>
-        </div>
-
-        <!-- Movie Card 3 -->
-        <div class="movie-card">
-            <img src="https://via.placeholder.com/300x450" alt="Avengers">
-            <h3>Avengers</h3>
-            <a href="https://www.youtube.com/results?search_query=Avengers+trailer" target="_blank">
-                <button>Watch Trailer</button>
-            </a>
-        </div>
-
-        <!-- Movie Card 4 -->
-        <div class="movie-card">
-            <img src="https://via.placeholder.com/300x450" alt="One Piece">
-            <h3>One Piece</h3>
-            <a href="https://www.youtube.com/results?search_query=One+Piece+trailer" target="_blank">
-                <button>Watch Trailer</button>
-            </a>
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Movie Express. All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
+<!-- CATEGORY FILTERS -->
+<div class="filters">
+  <button onclick="filterMovies('all')">All</button>
+  <button onclick="filterMovies('action')">Action</button>
+  <button onclick="filterMovies('comedy')">Comedy</button>
+  <button onclick="filterMovies('anime')">Anime</button>
+</div>
+<!-- MOVIE GRID -->
+<div class="movies"></div>
+</div>
+<script src="script.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Movie Express",
+  "url": "https://mkc-crypto.github.io/Movie-express-/",
+  "description": "Watch movie trailers online including action, comedy and anime movies."
+}
+</script>
 </body>
 </html>
